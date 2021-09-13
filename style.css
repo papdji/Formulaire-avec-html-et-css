@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(#cf6a0c, #e4720767)
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.box{
+    background-color: rgb(73, 47, 17);
+    position: relative;
+    padding: 50px;
+    width: 360px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 5px 35px rgba(255, 233, 233, 0.39);
+}
+.box .form{
+    position: relative;
+    width: 100%;
+}
+img{
+	width:90px;
+    height:90px;
+    border-radius:50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.box .form h1{
+    text-align: center;
+    text-shadow: #FFF 0px 0px 5px, rgb(182, 179, 179) 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px;
+    color: #FFFFFF;
+}
+
+.box .form .inputBx{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.box .form .inputBx input{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(243, 219, 219, 0.2);
+    background: transparent;
+    padding: 8px 10px;
+    padding-left: 35px;
+    border-radius: 25px;
+    color: rgb(255, 251, 251);
+    font-size: 16px;
+    font-weight: 300; 
+}
+.box .form .inputBx input::placeholder{
+    color: rgba(250, 248, 248, 0.972);
+}
+.box .form .inputBx input[type=email]:valid{
+    background-color: green;
+}
+.fa-envelope{
+    position: absolute;
+    content: "\f0e0";
+    padding-left: 9px;
+    padding-top: 11px;
+}
+.fa-lock{
+    position: absolute;
+    content: "\f0e0";
+    padding-left: 9px;
+    padding-top: 11px;
+}
+.box .form .inputBx input[type=password]:valid{
+    background-color: green;
+}
+.box .form .inputBx input[type="submit"]{
+    background: rgba(46, 143, 7, 0.904);
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    max-width: 100px;
+    padding: 8px 10px;
+    box-shadow: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.box .form .inputBx input[type="reset"]{
+    background: rgb(250, 59, 52);
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    max-width: 100px;
+    padding: 8px 10px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
